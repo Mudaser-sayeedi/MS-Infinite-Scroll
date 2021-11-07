@@ -18,6 +18,8 @@ const imgLoaded = () => {
     imagesLoaded++;
     if (imagesLoaded === totalImages) {
         ready = true;
+    }
+    if (imagesLoaded === 3) {
         loader.hidden = true;
     }
 }
